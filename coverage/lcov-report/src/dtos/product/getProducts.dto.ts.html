@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/dtos/user/getUsers.dto.ts</title>
+    <title>Code coverage report for src/dtos/product/getProducts.dto.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/dtos/user</a> getUsers.dto.ts</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/dtos/product</a> getProducts.dto.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -89,20 +89,20 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span></td><td class="text"><pre class="prettyprint lang-js">import z from "zod"
-import { UserModel } from "../../models/User"
+<span class="cline-any cline-yes">2x</span></td><td class="text"><pre class="prettyprint lang-js">import z from "zod"
+import { ProductModel } from "../../models/Product"
 &nbsp;
-export interface GetUsersInputDTO {
+export interface GetProductsInputDTO {
   q: string,
   token: string
 }
 &nbsp;
-export type GetUsersOutputDTO = UserModel[]
+export type GetProductsOutputDTO = ProductModel[]
 &nbsp;
-export const GetUsersSchema = z.object({
+export const GetProductsSchema = z.object({
   q: z.string().min(1).optional(),
   token: z.string().min(1)
-}).transform(data =&gt; data as GetUsersInputDTO)</pre></td></tr></table></pre>
+}).transform(data =&gt; data as GetProductsInputDTO)</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
